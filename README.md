@@ -1,2 +1,66 @@
-# Regulatory Reporting Simulation using Azure Data Studio & Hadoop
+# 📊 Regulatory Reporting Simulation
+
+• Simulated US regulatory reports (Y-9C, Y-14, 2052a) using SQL in Azure Data Studio to map financial data to compliance reporting
+formats.
+
+• Stored and transformed synthetic banking data in Hadoop HDFS to enable scalable data preparation and validation workflows.
+
+---
+
+## 🚀 Overview
+
+This project replicates the process of transforming financial datasets into standardized regulatory reports using:
+
+- SQL scripting in **Azure Data Studio**
+- Scalable processing with **Apache Spark (PySpark)**
+- A local simulation of **Hadoop HDFS**
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Azure Data Studio** – SQL-based data generation
+- **Apache Spark (PySpark)** – Distributed data processing
+- **Python 3.10+**
+- **Simulated HDFS** – Folder-based structure for Hadoop-like workflow
+
+---
+
+## 📁 Folder Structure
+
+RegulatoryReporting/
+├── spark_processing/ # PySpark scripts for report generation
+├── sql_scripts/ # SQL script to generate synthetic financial data
+├── simulated_hdfs/
+│ └── user/bank/
+│ ├── raw_data/ # Input CSVs (accounts, loans, liquidity)
+│ └── output_data/ # Generated reports (Y9C, Y14, 2052a)
+├── requirements.txt # Python dependencies
+├── .gitignore # Ignore raw/output folders and environment files
+└── README.md # This documentation
+
+
+---
+
+## ▶️ How to Run the Project
+
+1. **Prepare Data**  
+   Export SQL output to CSVs and place them inside:
+simulated_hdfs/user/bank/raw_data/
+
+
+### 2. **Activate Environment**
+```bash
+conda activate spark-env
+
+
+
+
+✅ Sample Reports Generated
+Y-9C Summary – Total balances by account type
+
+Y-14 Summary – Risk-weighted balances by loan type
+
+FR 2052a Summary – Net liquidity flow by source type
+
 

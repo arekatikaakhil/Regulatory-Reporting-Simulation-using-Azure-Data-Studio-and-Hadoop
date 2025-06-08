@@ -25,23 +25,6 @@ This project replicates the process of transforming financial datasets into stan
 - **Simulated HDFS** – Folder-based structure for Hadoop-like workflow
 
 ---
-
-## 📁 Folder Structure
-
-RegulatoryReporting/
-├── spark_processing/ # PySpark scripts for report generation
-├── sql_scripts/ # SQL script to generate synthetic financial data
-├── simulated_hdfs/
-│ └── user/bank/
-│ ├── raw_data/ # Input CSVs (accounts, loans, liquidity)
-│ └── output_data/ # Generated reports (Y9C, Y14, 2052a)
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore raw/output folders and environment files
-└── README.md # This documentation
-
-
----
-
 ## ▶️ How to Run the Project
 
 1. **Prepare Data**  

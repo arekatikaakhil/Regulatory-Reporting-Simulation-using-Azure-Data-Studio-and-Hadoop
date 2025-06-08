@@ -37,7 +37,6 @@ simulated_hdfs/user/bank/raw_data/
 conda activate spark-env
 
 
-
 ✅ Sample Reports Generated
 Y-9C Summary – Total balances by account type
 
